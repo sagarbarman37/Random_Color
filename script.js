@@ -12,7 +12,11 @@ body.style.backgroundColor = hexCode;
 
 input.innerText = hexCode;
 
-navigator.clipboard.writeText(hexCode)
+btn.style.backgroundColor = hexCode;
+
+btn.style.color = 'white';
+
+navigator.clipboard.writeText(hexCode);
   
 }
 
