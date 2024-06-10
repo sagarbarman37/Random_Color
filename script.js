@@ -11,6 +11,8 @@ const hexCode = '#'+ randomNum;
 body.style.backgroundColor = hexCode;
 
 input.value = hexCode;
+
+navigator.clipboard.writeText(hexCode)
   
 }
 
