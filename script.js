@@ -1,4 +1,4 @@
-const generateColor = document.querySelector('#btn');
+const btn = document.querySelector('#btn');
 const body = document.querySelector('body');
 const input = document.querySelector('#input');
 
@@ -22,7 +22,7 @@ navigator.clipboard.writeText(hexCode);
 
 color()
 
-generateColor.addEventListener('click', ()=>{
+btn.addEventListener('click', ()=>{
   color()
 
 })
