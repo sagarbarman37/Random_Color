@@ -10,7 +10,7 @@ const hexCode = '#'+ randomNum;
 
 body.style.backgroundColor = hexCode;
 
-input.value = hexCode;
+input.innerText = hexCode;
 
 navigator.clipboard.writeText(hexCode)
   
