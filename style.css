@@ -4,15 +4,13 @@
 }
 
 body{
-  height: 91vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px;
 }
 
 #box{
   height: 200px;
   width: 200px;
+  margin: 20px auto;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   border-radius: 10px;
   display: flex;
@@ -38,4 +36,15 @@ body{
   padding: 0 4px;
   border: 1px solid #fff;
   border-radius: 6px;
+}
+
+.js-box{
+  height:20px;
+  width: 50px;
+  font-size: .7rem;
+  color: #fff;
+  margin: 5px 10px;
+  padding: 20px 5px;
+  border-radius: 8px;
+  display: inline-block;
 }
