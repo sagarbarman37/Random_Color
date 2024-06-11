@@ -7,6 +7,62 @@ body{
   padding: 15px;
 }
 
+/*toggle*/
+
+#input{
+  visibility: hidden;
+  position: relative;
+}
+
+label{
+  height: 30px;
+  width: 60px;
+  background-color: #000;
+  border-radius: 20px;
+  position: absolute;
+  inset: 10px;
+}
+
+#circle{
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  animation: toggle-Off .5s linear;
+}
+
+#input:checked + label{
+  background-color: #fff;
+  transition: .5s;
+}
+
+#input:checked + label #circle{
+  background-color: #000;
+  animation: toggle-On .5s linear forwards;
+}
+
+@keyframes toggle-On {
+  0%{
+    transform: translateX(0)
+  }
+  100%{
+    transform: translateX(100%)
+  }
+}
+
+@keyframes toggle-Off {
+  0%{
+    transform: translateX(100%)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+
+/*color plate*/
 #box{
   height: 200px;
   width: 200px;
