@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const btn = document.querySelector('#btn');
 const box = document.querySelector('#box');
 const input = document.querySelector('#input');
@@ -11,7 +12,9 @@ box.style.backgroundColor = hexCode;
 input.innerText = hexCode;
 btn.style.backgroundColor = hexCode;
 btn.style.color = 'white';
-navigator.clipboard.writeText(hexCode);
+//navigator.clipboard.writeText(hexCode);
+
+//color box
 
 const newBox = document.createElement('div');
   newBox.classList.add('js-box')
