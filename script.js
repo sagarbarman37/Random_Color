@@ -1,5 +1,5 @@
 const btn = document.querySelector('#btn');
-const body = document.querySelector('body');
+const box = document.querySelector('#box');
 const input = document.querySelector('#input');
 
 
@@ -7,7 +7,7 @@ function color(){
 const randomNum = Math.random().toString(16).slice(2, 8).padEnd(6, 0).toUpperCase();
 
 const hexCode = `#${randomNum}`;
-body.style.backgroundColor = hexCode;
+box.style.backgroundColor = hexCode;
 input.innerText = hexCode;
 btn.style.backgroundColor = hexCode;
 btn.style.color = 'white';
